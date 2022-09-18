@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "monospace", sans-serif;
+}
+
+.App {
+  background-image: url("./images/TrianglesBackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: skyblue;
+  min-height: 100vh;
+  max-height: 100vh;
+  text-align: center;
+}
+
+.App-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  color: skyblue;
+}
+
+.Weather-Component {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.2) 59%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("./images/ColorBackground.jpg");
+  border-radius: 1em;
+
+  min-height: 50vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-position: top;
+  transition: 0.4 ease-out;
+}
+main {
+  padding: 25px;
+}
+/* CHANGE NAME FROM WARM TO NIGHT */
+.Weather-Component.Warm {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.2) 59%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("./images/multi_night.png");
+
+  min-height: 50vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-position: top;
+  transition: 0.4 ease-out;
+}
+
+/* Search Box styling */
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.Weather-Component {
+  text-align: center;
+  padding-top: 55px;
+}
+
+.Weather-Component .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Weather-Component .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
