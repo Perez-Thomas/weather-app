@@ -64,7 +64,7 @@ const SearchBox = (d) => {
               <div className="weather">
                 📈 Max Temp: {Math.round(weather.main.temp_max * 1.8 + 32)}°F
               </div>
-              <div className="weather">{weather.wind.speed}</div>
+              {/* <div className="weather">{weather.wind.speed}</div> */}
             </div>
           </div>
         ) : (
